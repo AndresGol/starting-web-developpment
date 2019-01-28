@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: darkgray;
+    background-color: #ebebeb;
   }
   .lee {
       padding: 40px;
@@ -98,69 +98,92 @@ a.button p {
 
   }
   
-  .topnav {
-    padding-top: 33px;
-    margin: -25px 40px -26px 40px;
-    padding: 2% 12%;
-    overflow: hidden;
-    background-color: white;
-    width: 50%;
-}
   
-  .topnav a {
-    float: left;
-    color: grey;
+.icon{
+    display: flex;
+    justify-content: space-around;
     text-align: center;
-    padding: 14px 16px;
+    padding: 50px 100px;
+}
+.fa {
+    color: #7f7e7d;
     text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color:#cc241e;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa:hover {
+    color:red;
+    transform: scale(1.3);
+    transition-duration: 1s;
+
+}
+
+li{
+    display: inline-block;
+   
+}
+i{
+    transform: scale(2);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+li:hover{
     color: white;
+}
+
+
+
+.global{
+    width: 630px;
     border-radius: 6px;
-  }
-  
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-
-  .topnav p {
-      margin: 9px;
-  }
-.films {
-    padding: 40px;
-    margin: 40px;
-    background-color: white;
-    width: 50%;
-
-}
-
-.films img {
-    width: 16%;
-    margin-bottom: 20px;
-    margin-right: 20px;
-
-}
-
-.clearfix > img{
-    float: left;
-    overflow: auto;
-
-    }
-
-
-.clearfix{
-    float: left;
-    overflow: auto;
+    margin: 8px auto;
+    background-color: #fff;
+    padding: 30px;
+    -webkit-box-shadow: 1px 1px 9px 1px #B8B8B8;
+    box-shadow: 1px 1px 9px 1px #B8B8B8;
     
-        }
-
-.titreFilms {
-background-color: white;
+    
+}  
+.pelis{
+    display: grid;
+    grid-gap: 30px;
+    grid-template: 100px repeat(3, 1fr) / auto auto;
+    grid-template-areas:
+        "ti   ti"
+        "o1 t1"
+        "h2 hp"
+        "a3 ap";
 }
-.pFilms {
-background-color: white;
-}    
+.pelis h2{
+    grid-area: ti;
+}
+.odi-img{
+    grid-area: o1;
+}
+.odi-txt{
+    grid-area: t1;
+}
+.hul-img{
+    grid-area: h2;
+}
+.hul-txt{
+    grid-area: hp;
+}
+.ali-img{
+    grid-area: a3;
+}
+.ali-txt{
+    grid-area: ap;
+}
+@media only screen and (max-width: 600px){
+    .main{
+        width: 400px;
+    }
+    .icon{
+        padding: 10px 10px;
+    }
+}
