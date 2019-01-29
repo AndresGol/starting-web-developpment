@@ -3,6 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+/*I just added this for firefox*/
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 .flexbox-container {
     display: flex;
     flex-direction: column;
@@ -81,7 +87,9 @@ h3 {font-family: "Montserrat";
      margin-bottom: 20px;
 
   }
-p {font-family: "Open Sans";
+p {
+    text-align: justify;
+    font-family: "Open Sans";
     font-size: 18px;
     color: #7f7e7d;
   } 
