@@ -3,12 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-/*I just added this for firefox*/
-.font-montserrat {
-    font-family: 'Montserrat', sans-serif !important;
-}
-
 .flexbox-container {
     display: flex;
     flex-direction: column;
@@ -85,7 +79,6 @@ h3 {font-family: "Montserrat";
      text-align: center;
      color:#7f7e7d;
      margin-bottom: 20px;
-
   }
 p {
     text-align: justify;
@@ -122,11 +115,7 @@ p {
 li {
     display: inline-block;  
 }
-i {
-    transform: scale(2);
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
+
 li:hover {
     color: white;
 }
@@ -144,10 +133,9 @@ li:hover {
     grid-gap: 30px;
     grid-template: 100px repeat(3, 1fr) / auto auto;
     grid-template-areas:    "ti   ti"
-                            "o1 t1"
-                            "h2 hp"
-                            "a3 ap";
-       
+                            "o1   t1"
+                            "h2   hp"
+                            "a3   ap";      
 }
 .pelis h2 {
     grid-area: ti;
