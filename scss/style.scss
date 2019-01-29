@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #ebebeb;
+}
+.lee {
+    padding: 40px;
+    margin: 40px;
+    background-color: white;
+    width: 50%;
+}
+.lee img {
+    border: 2px solid #7f7e7d;
+    border-radius: 50%;
+    width: 6em;
+    margin:auto;
+}
+#boxImgLee {
+    margin-top: 33px;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 24px;
+    border: 1px solid #a12727;
+    border-radius: 6px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#5c1313));
+    background: -moz-linear-gradient(top, #ff4a4a, #5c1313);
+    background: linear-gradient(to bottom, #ff4a4a, #5c1313);
+    font: normal normal normal 16px arial;
+    color: #ffffff!important;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#6e1717));
+    background: -moz-linear-gradient(top, #ff5959, #6e1717);
+    background: linear-gradient(to bottom, #fb9f9f, #5d0a0a);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #982727;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#5c1313));
+    background: -moz-linear-gradient(top, #982727, #5c1313);
+    background: linear-gradient(to bottom, #982727, #5c1313);
+}
+a.button p {
+    color: #ffffff;
+}
+h1 {
+    margin: 17px;
+    font-family: "Montserrat";
+    color: red;
+    text-align: center;
+  }
+h2 {
+    margin: 5px 0px 52px 0px;
+    font-family: "Montserrat";
+    text-align: center;
+    color: #7f7e7d;
+  }
+h3 {font-family: "Montserrat";
+     text-align: center;
+     color:#7f7e7d;
+     margin-bottom: 20px;
+  }
+p {
+    text-align: justify;
+    font-family: "Open Sans";
+    font-size: 18px;
+    color: #7f7e7d;
+  } 
+.icon{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px 100px;
+}
+.fa {padding: 1em;
+    border-radius: 6px;
+    color: #7f7e7d;
+    text-decoration: none;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1.5em!important;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa:hover {
+    color:grey;
+    background-color: #ebebeb;
+    transition-duration: 0.8s;
+    transform: scale(1.1);
+}
+.fa p {
+    margin-top: 10px;
+}
+li {
+    display: inline-block;  
+}
+
+li:hover {
+    color: white;
+}
+.global {
+    width: 630px;
+    border-radius: 6px;
+    margin: 8px auto;
+    background-color: #fff;
+    padding: 30px;
+    -webkit-box-shadow: 1px 1px 9px 1px #B8B8B8;
+    box-shadow: 1px 1px 9px 1px #B8B8B8;
+}  
+.pelis {
+    display: grid;
+    grid-gap: 30px;
+    grid-template: 100px repeat(3, 1fr) / auto auto;
+    grid-template-areas:    "ti   ti"
+                            "o1   t1"
+                            "h2   hp"
+                            "a3   ap";      
+}
+.pelis h2 {
+    grid-area: ti;
+}
+.odi-img {
+    grid-area: o1;
+}
+.odi-txt {
+    grid-area: t1;
+}
+.hul-img {
+    grid-area: h2;
+}
+.hul-txt {
+    grid-area: hp;
+}
+.ali-img {
+    grid-area: a3;
+}
+.ali-txt {
+    grid-area: ap;
+}
+@media only screen and (max-width: 600px){
+.main { 
+    width: 400px;
+    }
+.icon {
+    padding: 10px 10px;
+    }
+}
