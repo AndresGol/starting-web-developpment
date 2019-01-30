@@ -111,21 +111,19 @@ p {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-.fa:hover {
-  color: grey;
-  background-color: #ebebeb;
-  transition-duration: 0.8s;
-  transform: scale(1.1); }
+  .fa:hover {
+    color: grey;
+    background-color: #ebebeb;
+    transition-duration: 0.5s;
+    transform: scale(1.1); }
 
 .fa p {
   margin-top: 10px; }
 
 li {
   display: inline-block; }
-
-li:hover {
-  color: #ffffff; }
+  li:hover {
+    color: #ffffff; }
 
 .global {
   width: 630px;
