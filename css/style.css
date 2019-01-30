@@ -1,8 +1,13 @@
-/*aloha mon titi*/
+/*premiere feuille de style avec sass*/
+/*Variables*/
+/*This is a visible comment*/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
+
+body {
+  background-color: #ebebeb; }
 
 .flexbox-container {
   display: flex;
@@ -13,17 +18,21 @@
   align-content: center;
   background-color: #ebebeb; }
 
+/*Nesting selectors and ampersand*/
 .lee {
   padding: 40px;
   margin: 40px;
   background-color: white;
   width: 50%; }
-
-.lee img {
-  border: 2px solid #7f7e7d;
-  border-radius: 50%;
-  width: 6em;
-  margin: auto; }
+  .lee img {
+    border: 2px solid #7f7e7d;
+    border-radius: 50%;
+    width: 6em;
+    margin: auto; }
+    .lee img:hover {
+      transform: scale(1.5);
+      transition-duration: 0.8s;
+      filter: drop-shadow(0 0 0.6rem #d6213f); }
 
 #boxImgLee {
   margin-top: 33px;
@@ -45,21 +54,18 @@
   font: normal normal normal 16px arial;
   color: #ffffff !important;
   text-decoration: none; }
-
-.button:hover,
-.button:focus {
-  background: #ff5959;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#6e1717));
-  background: -moz-linear-gradient(top, #ff5959, #6e1717);
-  background: linear-gradient(to bottom, #fb9f9f, #5d0a0a);
-  color: #ffffff;
-  text-decoration: none; }
-
-.button:active {
-  background: #982727;
-  background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#5c1313));
-  background: -moz-linear-gradient(top, #982727, #5c1313);
-  background: linear-gradient(to bottom, #982727, #5c1313); }
+  .button:hover, .button:focus {
+    background: #ff5959;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#6e1717));
+    background: -moz-linear-gradient(top, #ff5959, #6e1717);
+    background: linear-gradient(to bottom, #fb9f9f, #5d0a0a);
+    color: #ffffff;
+    text-decoration: none; }
+  .button:active {
+    background: #982727;
+    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#5c1313));
+    background: -moz-linear-gradient(top, #982727, #5c1313);
+    background: linear-gradient(to bottom, #982727, #5c1313); }
 
 a.button p {
   color: #ffffff; }
@@ -67,7 +73,7 @@ a.button p {
 h1 {
   margin: 17px;
   font-family: "Montserrat";
-  color: yellow;
+  color: #d6213f;
   text-align: center; }
 
 h2 {
@@ -119,13 +125,13 @@ li {
   display: inline-block; }
 
 li:hover {
-  color: white; }
+  color: #ffffff; }
 
 .global {
   width: 630px;
   border-radius: 6px;
   margin: 8px auto;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px;
   -webkit-box-shadow: 1px 1px 9px 1px #B8B8B8;
   box-shadow: 1px 1px 9px 1px #B8B8B8; }
@@ -136,7 +142,7 @@ li:hover {
   grid-template: 100px repeat(3, 1fr)/auto auto;
   grid-template-areas: "ti   ti" "o1   t1" "h2   hp" "a3   ap"; }
 
-.pelis h2 {
+h2 {
   grid-area: ti; }
 
 .odi-img {
@@ -158,8 +164,8 @@ li:hover {
   grid-area: ap; }
 
 @media only screen and (max-width: 600px) {
-  .main {
-    width: 400px; }
+  .flexbox-container {
+    width: 634px; }
 
   .icon {
     padding: 10px 10px; } }

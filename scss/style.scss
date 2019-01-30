@@ -1,12 +1,26 @@
-$color1:yellow;
-$color2:#7f7e7d;
-$colorBG:red;
 
-/*aloha mon titi*/
+//premiere feuille de style avec sass
+/*premiere feuille de style avec sass*/
+
+
+//Variables 
+/*Variables*/
+
+$color1:rgb(214, 33, 63);
+$color2:#7f7e7d;
+$colorbg:#ffffff;
+$colorBgBody:#ebebeb;
+
+//this is an invisible comment
+/*This is a visible comment*/
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+body {
+    background-color: $colorBgBody;
 }
 
 .flexbox-container {
@@ -16,20 +30,30 @@ $colorBG:red;
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: #ebebeb;
+    background-color: $colorBgBody;
 }
+
+//Nesting selectors and ampersand
+/*Nesting selectors and ampersand*/
+
 .lee {
     padding: 40px;
     margin: 40px;
     background-color: white;
     width: 50%;
-}
-.lee img {
+    img {
     border: 2px solid #7f7e7d;
     border-radius: 50%;
     width: 6em;
     margin:auto;
+        &:hover {
+            transform: scale(1.5);
+            transition-duration:0.8s;
+            filter: drop-shadow(0 0 0.60rem $color1);
+        }
+    }   
 }
+
 #boxImgLee {
     margin-top: 33px;
     width: 100%;
@@ -50,21 +74,22 @@ $colorBG:red;
     font: normal normal normal 16px arial;
     color: #ffffff!important;
     text-decoration: none;
-}
-.button:hover,
-.button:focus {
-    background: #ff5959;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#6e1717));
-    background: -moz-linear-gradient(top, #ff5959, #6e1717);
-    background: linear-gradient(to bottom, #fb9f9f, #5d0a0a);
-    color: #ffffff;
-    text-decoration: none;
-}
-.button:active {
-    background: #982727;
-    background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#5c1313));
-    background: -moz-linear-gradient(top, #982727, #5c1313);
-    background: linear-gradient(to bottom, #982727, #5c1313);
+
+    &:hover,
+    &:focus {
+        background: #ff5959;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff5959), to(#6e1717));
+        background: -moz-linear-gradient(top, #ff5959, #6e1717);
+        background: linear-gradient(to bottom, #fb9f9f, #5d0a0a);
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &:active {
+        background: #982727;
+        background: -webkit-gradient(linear, left top, left bottom, from(#982727), to(#5c1313));
+        background: -moz-linear-gradient(top, #982727, #5c1313);
+        background: linear-gradient(to bottom, #982727, #5c1313);
+    }
 }
 a.button p {
     color: #ffffff;
@@ -123,13 +148,13 @@ li {
 }
 
 li:hover {
-    color: white;
+    color:$colorbg;
 }
 .global {
     width: 630px;
     border-radius: 6px;
     margin: 8px auto;
-    background-color: #fff;
+    background-color:$colorbg;
     padding: 30px;
     -webkit-box-shadow: 1px 1px 9px 1px #B8B8B8;
     box-shadow: 1px 1px 9px 1px #B8B8B8;
@@ -143,32 +168,32 @@ li:hover {
                             "h2   hp"
                             "a3   ap";      
 }
-.pelis h2 {
+    h2 {
     grid-area: ti;
 }
-.odi-img {
-    grid-area: o1;
-}
-.odi-txt {
-    grid-area: t1;
-}
-.hul-img {
-    grid-area: h2;
-}
-.hul-txt {
-    grid-area: hp;
-}
-.ali-img {
-    grid-area: a3;
-}
-.ali-txt {
-    grid-area: ap;
-}
-@media only screen and (max-width: 600px){
-.main { 
-    width: 400px;
+    .odi-img {
+        grid-area: o1;
+    }
+    .odi-txt {
+        grid-area: t1;
+    }
+    .hul-img {
+        grid-area: h2;
+    }
+    .hul-txt {
+        grid-area: hp;
+    }
+    .ali-img {
+        grid-area: a3;
+    }
+    .ali-txt {
+        grid-area: ap;
+    }
+ @media only screen and (max-width: 600px){
+.flexbox-container { 
+    width: 634px;
     }
 .icon {
     padding: 10px 10px;
     }
-}
+} 
