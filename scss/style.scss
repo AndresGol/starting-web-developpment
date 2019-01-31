@@ -153,7 +153,9 @@ li {
     }
 }
 .global {
-    width: 630px;
+    width: 95%;
+    max-width: 700px;
+    min-width: 300px;
     border-radius: 6px;
     margin: 8px auto;
     background-color:$colorbg;
@@ -191,13 +193,29 @@ li {
     .ali-txt {
         grid-area: ap;
     }
+
+    //responsiveness
+    /*responsiveness*/
+    
     @media only screen and (max-width: 600px) {
         body {
-            max-width: 300px;
+            max-width: 100%;
         }
         .icon {
             padding: 10px 10px;
             }
+        .fa p {
+            font-size: 12px;
+            margin-top: 10px;
+            }
+        .fa {font-size: 1em !important;
+            }
+        p {
+                    font-size: 0.75em;
+                } 
+        .pelis img {
+            margin-top: 52px;
+        }
       }
 
 
