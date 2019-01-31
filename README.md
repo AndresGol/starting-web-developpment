@@ -4,7 +4,7 @@
 
 Realisé par Andrés Goldestein
 
-Reproduction d'une page Web à partir d'une image.
+Appliquer du CSS à partir d'un HTML.
 Je voulais pratiquer: grids, flexbox, et inclure en sass: variables, nestings selectors et commentaires.
 
 ## Compétences
